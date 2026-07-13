@@ -1,14 +1,10 @@
 [[main]]
-  name = "Docs"
+  name = "Profile"
   pageRef = "docs"
   weight = 10
 
 [[main]]
-  name = "Posts"
-  pageRef = "posts"
+  name = "Project"
+  pageRef = "/"
   weight = 20
 
-[[main]]
-  name = "Archive"
-  pageRef = "archive"
-  weight = 30

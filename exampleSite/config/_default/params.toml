@@ -48,17 +48,14 @@
 
 [follow]
   [follow.email]
-    enable = false
-    url = ""
+    enable = true
+    url = "vickryrachman18@gmail.com"
   [follow.github]
     enable = true
-    url = "https://github.com/mrhelloboy/seven"
-  [follow.x]
+    url = "https://github.com/vickryrachman"
+  [follow.linkedin]
     enable = true
-    url = ""
-  [follow.wechat]
-    enable = true
-    QRCodeUrl = "/images/society/wechat/wechat.jpg"
+    url = "https://www.linkedin.com/in/vickryrachman/"
 
 [copyright]
   owner = "Seven"
@@ -71,7 +68,7 @@
   enablePageView = true
 
 [comment]
-  enable = true
+  enable = false
   enableCounts = true  # Note: only works if waline or twikoo is enabled.
   [comment.waline]
     enable = true
@@ -87,7 +84,7 @@
     region = ""
 
 [search]
-  enable = true
+  enable = false
 
   [search.algolia]
     # Type of content. 
@@ -116,3 +113,4 @@
   [analytics.goatcounter]
     enable = true
     code = "seven-demo"  
+

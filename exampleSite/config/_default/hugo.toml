@@ -1,7 +1,7 @@
 baseURL = "https://hugoseven.netlify.app"
 
 hasCJKLanguage = true
-defaultContentLanguage = "zh-hans"
+defaultContentLanguage = "en"
 
 enableGitInfo = true
 enableEmoji = true
@@ -66,4 +66,7 @@ enableEmoji = true
 [services]
   [services.disqus]
     shortname = ""  # "seven-demo"  
+
+    [security.node.permissions]
+disable = true
 
