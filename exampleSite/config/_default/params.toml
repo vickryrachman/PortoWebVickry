@@ -32,12 +32,12 @@
 [logo]
   # Image logo or Text logo
   # Recommended to set image as logo. (prefer)
-  img = "/images/logo.svg"
-  img_dark = "/images/logo-footer.svg"
+  img = "/images/Portowebvickryblack.svg"
+  img_dark = "/images/Portowebvickrywhite.svg"
 
   # Max height not greater than 56 (px). default: 56 (px)
-  customLogoHeight = "56"
-  customLogoWidth = "120"
+  customLogoHeight = "44"
+  customLogoWidth = "200"
   text = ""
 
 [home]
