@@ -1,0 +1,26 @@
+- company: "PT Massa Robot Solusi"
+  role: "Data Mining Analyst"
+  period: "Mar 2026 – June 2026"
+  location: "Halmahera, Indonesia"
+  bullets:
+    - "Monitored and validated mining hauling data via **Fleet Management System (FMS)**, reducing ritase deviation by **up to 3%** through systematic data validation."
+    - "Delivered **daily, weekly, and monthly operational reports** in collaboration with field teams to support data-driven decision-making."
+    - "Analyzed safety violation patterns by type and peak hours, contributing to a **30% reduction in safety violations within the first 2 months**."
+
+- company: "Kementerian Kelautan dan Perikanan"
+  role: "Data Analyst Intern"
+  period: "Nov 2025 – Mar 2026"
+  location: "Jakarta, Indonesia"
+  bullets:
+    - "Built an **interactive monitoring dashboard in Google Looker Studio** tracking construction progress across **65 regions**, enabling real-time identification of performance gaps nationwide."
+    - "Analyzed multi-regional datasets using **Excel and Looker Studio** to generate performance insights supporting data-driven evaluation of a national development program."
+    - "Cleaned and validated data from **65 regional units** via **Excel and Google Sheets**, boosting accuracy of national monitoring reports"
+
+- company: "Magpie Ecommarce Intelligence"
+  role: "Data Analyst Intern"
+  period: "Aug 2023 - Aug 2024"
+  location: "Remote"
+  bullets:
+    - "Built an **interactive e-commerce dashboard in Looker Studio** tracking **Rp1.1T GMV** across Shopee, Tokopedia, and Blibli."
+    - "Conducted **cross platform sales analysis using SQL and Excel** across **10+ brands**, uncovering performance trends for client benchmarking."
+    - "Processed and validated **multi-marketplace transactional data** to ensure accuracy for monthly reporting and dashboard visualization."

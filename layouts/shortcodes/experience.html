@@ -1,0 +1,43 @@
+{{ $items := .Site.Data.experience }}
+<div
+  x-data="{ active: 0 }"
+  class="not-format my-8 flex flex-col gap-4 md:flex-row md:gap-8">
+  <!-- Daftar nama perusahaan (tab) -->
+  <div
+    class="flex shrink-0 flex-row gap-1 overflow-x-auto pb-2 md:w-56 md:flex-col md:overflow-visible md:border-r md:border-gray-200 md:pb-0 md:pr-4 dark:md:border-gray-700">
+    {{ range $i, $e := $items }}
+      <button
+        type="button"
+        @click="active = {{ $i }}"
+        :class="active === {{ $i }} ? 'text-[--hs-text-color-hover] dark:text-[--hs-text-color-hover-dark] border-[--hs-text-color-hover] dark:border-[--hs-text-color-hover-dark] font-semibold' : 'text-gray-500 dark:text-gray-500 border-transparent'"
+        class="shrink-0 whitespace-nowrap border-b-2 px-3 py-2 text-left text-sm transition hover:text-[--hs-text-color-hover] md:whitespace-normal md:border-b-0 md:border-l-2 dark:hover:text-[--hs-text-color-hover-dark]">
+        <span class="block">{{ $e.company }}</span>
+        <span class="block text-xs font-normal text-gray-400 dark:text-gray-600">{{ $e.period }}</span>
+      </button>
+    {{ end }}
+  </div>
+
+  <!-- Detail pengalaman -->
+  <div class="flex-1">
+    {{ range $i, $e := $items }}
+      <div
+        x-show="active === {{ $i }}"
+        x-cloak
+        class="animate-slideTop space-y-3 rounded-md bg-white/50 p-5 shadow-[0_7px_29px_0_rgba(100,100,111,0.15)] backdrop-blur-md dark:bg-gray-800/70 dark:shadow-[0_5px_15px_rgba(0,0,0,0.35)]">
+        <div>
+          <p class="text-lg font-bold text-gray-900 dark:text-gray-200">
+            {{ $e.role }}
+          </p>
+          {{ with $e.location }}
+            <p class="text-sm italic text-gray-500 dark:text-gray-600">{{ . }}</p>
+          {{ end }}
+        </div>
+        <ul class="list-disc space-y-2 pl-5 text-gray-700 dark:text-gray-400">
+          {{ range $e.bullets }}
+            <li>{{ . | markdownify }}</li>
+          {{ end }}
+        </ul>
+      </div>
+    {{ end }}
+  </div>
+</div>
