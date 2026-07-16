@@ -29,11 +29,15 @@
 #   light = ""
 #   dark = ""
 
+# Disable background image (tidak tersedia di subfolder deploy)
+[backgroundImage]
+  enable = false
+
 [logo]
   # Image logo or Text logo
   # Recommended to set image as logo. (prefer)
-  img = "/images/Portowebvickryblack.svg"
-  img_dark = "/images/Portowebvickrywhite.svg"
+  img = "/PortoWebVickry/images/Portowebvickryblack.svg"
+  img_dark = "/PortoWebVickry/images/Portowebvickrywhite.svg"
 
   # Max height not greater than 56 (px). default: 56 (px)
   customLogoHeight = "44"
