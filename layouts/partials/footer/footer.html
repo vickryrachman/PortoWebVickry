@@ -8,33 +8,8 @@
     {{ partial "footer/follow_me.html" . }}
   </div>
 
-  {{ $hugo := printf `<a href="https://gohugo.io/" aria-label="hugo link">
-    <img
-    src="/images/default/hugo-logo-wide.svg"
-    alt="Hugo"
-    class="mx-1 h-3" />
-    </a>`
-  }}
-  {{ $seven := printf `<a
-    href="https://github.com/mrhelloboy/seven"
-    aria-label="The github address of seven theme">
-    <img
-    x-show="!$store.darkMode.on"
-    x-cloak
-    id="footer-theme-light-logo"
-    src="/images/default/seven-logo.svg"
-    alt="seven theme logo"
-    class="mx-1 h-5" />
-
-    <img
-    x-show="$store.darkMode.on"
-    x-cloak
-    id="footer-theme-dark-logo"
-    src="/images/default/seven-logo-dark.svg"
-    alt="seven theme logo"
-    class="mx-1 h-5" />
-    </a>`
-  }}
+  {{ $hugo := printf `<a href="https://gohugo.io/" aria-label="hugo link">Hugo</a>` }}
+  {{ $seven := printf `<a href="https://github.com/mrhelloboy/seven" aria-label="The github address of seven theme">Seven</a>` }}
   <span x-data class="flex flex-row items-center justify-center"
     >{{ T "footer.powered_by" (dict "Hugo" $hugo "Theme" $seven) | safeHTML }}</span
   >
