@@ -18,8 +18,8 @@
   }
 
   let _enableBgImg = "{{ .Site.Params.backgroundImage.enable | default true }}" === "true";
-  let _lightbgImg = '{{ .Site.Params.backgroundImage.light | default "/images/default/bg.svg" }}';
-  let _darkbgImg = '{{ .Site.Params.backgroundImage.dark | default "/images/default/bg-dark.svg" }}';
+  let _lightbgImg = '{{ .Site.Params.backgroundImage.light | default "/images/default/bg.svg" | relURL }}';
+  let _darkbgImg = '{{ .Site.Params.backgroundImage.dark | default "/images/default/bg-dark.svg" | relURL }}';
 
   if (_enableBgImg) {
     let _lightbg = new Image();

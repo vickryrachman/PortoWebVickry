@@ -34,8 +34,13 @@ jobs:
         with:
           node-version: "20"
 
-      - name: Install npm dependencies (PostCSS/Tailwind)
+      - name: Install npm dependencies (PostCSS/Tailwind at root)
         run: npm ci
+
+      - name: Copy PostCSS and Tailwind config to exampleSite
+        run: |
+          cp postcss.config.js exampleSite/postcss.config.js
+          cp tailwind.config.js exampleSite/tailwind.config.js
 
       - name: Install Hugo modules
         working-directory: ./exampleSite
@@ -54,9 +59,6 @@ jobs:
         env:
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
-          # Point PostCSS to config files in root (where node_modules live)
-          HUGO_FILE_TAILWIND_CONFIG_JS: ../tailwind.config.js
-          NODE_PATH: ../node_modules
         run: |
           hugo --gc --minify \
             --baseURL "https://vickryrachman.github.io/PortoWebVickry/"
