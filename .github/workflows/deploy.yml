@@ -60,7 +60,7 @@ jobs:
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
         run: |
-          hugo --gc --minify \
+          hugo --gc --minify --ignoreCache \
             --baseURL "https://vickryrachman.github.io/PortoWebVickry/"
 
       - name: Deploy to gh-pages branch
