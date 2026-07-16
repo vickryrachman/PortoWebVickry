@@ -10,14 +10,14 @@
     <img
       x-cloak
       x-show="!$store.darkMode.on"
-      src="{{ $logoInfo.img }}"
+      src="{{ $logoInfo.img | relURL }}"
       class="h-[{{ $logoH }}px]"
       alt="Logo" />
     {{/* Dark logo */}}
     <img
       x-cloak
       x-show="$store.darkMode.on"
-      src="{{ $logoInfo.img_dark }}"
+      src="{{ $logoInfo.img_dark | relURL }}"
       class="h-[{{ $logoH }}px]"
       alt="Logo" />
   </div>

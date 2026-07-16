@@ -9,7 +9,7 @@
             class="flex items-center justify-start space-x-2 text-gray-800 dark:text-gray-400">
              {{ if not .Params.disableImg }}
               <img
-                src="/images/fotoprofile.jpeg"
+                src="{{ "images/fotoprofile.jpeg" | relURL }}"
                 alt="Foto Profil"
                 class="size-14 rounded-full object-cover" />
             {{ end }}
