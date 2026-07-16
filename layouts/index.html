@@ -58,7 +58,7 @@
             class="flex space-x-7 p-1 md:p-4">
             <!-- Date & Title & Image  -->
             <div
-              x-data="{ isLoaded: false }"
+              x-data="{ isLoaded: {{ if eq $idx 0 }}true{{ else }}false{{ end }} }"
               class="group flex w-full flex-col space-y-5 md:w-2/3 md:space-y-7">
               <div
                 class="hs-content-meta flex items-center justify-start space-x-2 text-sm text-gray-600 dark:text-gray-500">
@@ -74,7 +74,7 @@
 
               <div
                 class="h-60 w-full"
-                x-intersect.threshold.70="isLoaded = true;">
+                x-intersect.threshold.0="isLoaded = true;">
                 {{ with resources.Get $post.Params.image }}
                   <div
                     x-show="!isLoaded"
@@ -95,7 +95,7 @@
                     x-cloak
                     :src="'{{ .Permalink }}'"
                     :alt="'{{ $post.Title }}'"
-                    loading="lazy"
+                    {{ if eq $idx 0 }}loading="eager"{{ else }}loading="lazy"{{ end }}
                     decoding="async"
                     class="h-full w-full animate-slideTop rounded-md shadow-[0_5px_15px_rgba(0,0,0,0.35)]" />
                 {{ end }}

@@ -15,7 +15,9 @@
             {{ .Title }} - {{ .Data.Plural }} |
             {{ .Site.Title }}
           {{ else }}
-            {{ .Type }} |
+            {{ if .Title }}
+              {{ .Title }} |
+            {{ end }}
             {{ .Site.Title }}
           {{ end }}
         {{- end -}}
