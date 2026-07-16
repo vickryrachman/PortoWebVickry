@@ -11,5 +11,4 @@ Holla, Welcome to my Portoweb, I'm a Data Analyst turning messy, large-scale dat
 
 {{< experience >}}
 
----
 ## Project
