@@ -5,6 +5,8 @@
 # There's a transition animation when you turn on dark mode.
 # disableDarkAnimate = false
 
+omitCategoryOnMenu = true
+
 [app]
   # Optional site title override for the app when added to an iOS home screen or Android launcher
   title = "Seven Theme"
@@ -60,6 +62,10 @@
   [follow.linkedin]
     enable = true
     url = "https://www.linkedin.com/in/vickryrachman/"
+  [follow.cv]
+    enable = true
+    url = "https://drive.google.com/file/d/1m3Mr5otC97Tv045xiX1PkoiccYh4t7A0/view?usp=sharing"
+  
 
 [copyright]
   owner = "Seven"
@@ -69,7 +75,7 @@
   disableImgGradient = false
 
   # Note: only works if waline or twikoo is enabled.
-  enablePageView = true
+  enablePageView = false
 
 [comment]
   enable = false

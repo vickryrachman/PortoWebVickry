@@ -1,0 +1,32 @@
+<svg viewBox="0 0 1180 170" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrowP" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2E86AB"/>
+    </marker>
+  </defs>
+  <path d="M190,102 L230,102" stroke="#2E86AB" stroke-width="2.5" marker-end="url(#arrowP)"/>
+  <path d="M380,102 L420,102" stroke="#2E86AB" stroke-width="2.5" marker-end="url(#arrowP)"/>
+  <path d="M570,102 L610,102" stroke="#2E86AB" stroke-width="2.5" marker-end="url(#arrowP)"/>
+  <path d="M760,102 L800,102" stroke="#2E86AB" stroke-width="2.5" marker-end="url(#arrowP)"/>
+  <path d="M950,102 L990,102" stroke="#2E86AB" stroke-width="2.5" marker-end="url(#arrowP)"/>
+
+  <g><circle cx="115" cy="30" r="16" fill="#C9A227"/><text x="115" y="35" text-anchor="middle" font-size="14" font-weight="700" fill="#1A1A2E" font-family="Georgia,serif">1</text>
+  <rect x="40" y="55" width="150" height="95" rx="10" fill="#1F3A5F"/>
+  <foreignObject x="48" y="63" width="134" height="79"><div xmlns="http://www.w3.org/1999/xhtml" style="color:#fff;font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:1.35;text-align:center;display:flex;align-items:center;justify-content:center;height:100%;"><span><strong>Write Case Study</strong><br/>Markdown, shared template</span></div></foreignObject></g>
+
+  <g><circle cx="305" cy="30" r="16" fill="#C9A227"/><text x="305" y="35" text-anchor="middle" font-size="14" font-weight="700" fill="#1A1A2E" font-family="Georgia,serif">2</text>
+  <rect x="230" y="55" width="150" height="95" rx="10" fill="#1F3A5F"/>
+  <foreignObject x="238" y="63" width="134" height="79"><div xmlns="http://www.w3.org/1999/xhtml" style="color:#fff;font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:1.35;text-align:center;display:flex;align-items:center;justify-content:center;height:100%;"><span><strong>Customize Theme</strong><br/>Hugo + Tailwind CSS</span></div></foreignObject></g>
+
+  <g><circle cx="495" cy="30" r="16" fill="#C9A227"/><text x="495" y="35" text-anchor="middle" font-size="14" font-weight="700" fill="#1A1A2E" font-family="Georgia,serif">3</text>
+  <rect x="420" y="55" width="150" height="95" rx="10" fill="#1F3A5F"/>
+  <foreignObject x="428" y="63" width="134" height="79"><div xmlns="http://www.w3.org/1999/xhtml" style="color:#fff;font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:1.35;text-align:center;display:flex;align-items:center;justify-content:center;height:100%;"><span><strong>Build Site</strong><br/>Hugo static build</span></div></foreignObject></g>
+
+  <g><circle cx="685" cy="30" r="16" fill="#C9A227"/><text x="685" y="35" text-anchor="middle" font-size="14" font-weight="700" fill="#1A1A2E" font-family="Georgia,serif">4</text>
+  <rect x="610" y="55" width="150" height="95" rx="10" fill="#1F3A5F"/>
+  <foreignObject x="618" y="63" width="134" height="79"><div xmlns="http://www.w3.org/1999/xhtml" style="color:#fff;font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:1.35;text-align:center;display:flex;align-items:center;justify-content:center;height:100%;"><span><strong>Deploy</strong><br/>GitHub Pages</span></div></foreignObject></g>
+
+  <g><circle cx="875" cy="30" r="16" fill="#C9A227"/><text x="875" y="35" text-anchor="middle" font-size="14" font-weight="700" fill="#1A1A2E" font-family="Georgia,serif">5</text>
+  <rect x="800" y="55" width="150" height="95" rx="10" fill="#1F3A5F"/>
+  <foreignObject x="808" y="63" width="134" height="79"><div xmlns="http://www.w3.org/1999/xhtml" style="color:#fff;font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:1.35;text-align:center;display:flex;align-items:center;justify-content:center;height:100%;"><span><strong>Live Portfolio</strong><br/>vickryrachman.github.io</span></div></foreignObject></g>
+</svg>

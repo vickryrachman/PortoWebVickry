@@ -3,7 +3,7 @@ title: "A/B Testing: Conversion Rate Optimization"
 date: 2022-07-13
 draft: false
 weight: 6
-categories: ["Docments"]
+categories: ["Documents"]
 tags: ["A/B Testing", "Hypothesis Testing", "Statistical Analysis", "Two-Proportion", "Z-Test", "SQL", "Python", "Looker Studio", "Conversion Rate", "Optimization Data", "Visualization", "E-Commerce"]
 layout: "docs"
 url: "docs/GG-project"
@@ -27,6 +27,7 @@ Designed and executed an A/B test splitting 294,000+ users randomly into two gro
 ## Tools
 - **Looker Studio (Google Data Studio)** — daily monitoring dashboard for control vs. treatment conversion rate
 - **Two-Proportion Z-Test** — statistical method to test significance of the difference in conversion proportions
+- **Pyhton** - Tambahin Buat ngolah datanya disini!!! 
 
 ## Analysis Process
 
